@@ -1,0 +1,188 @@
+#Accer {
+    background-color: rgba(0, 13, 255, 0.906);
+    display: flex;            /* Necesario para que justify-content funcione */
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+#Accer ul {
+    display: flex; /* Hace que los <li> estén en fila (horizontal) */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#Accer li {
+    margin: 0 15px; /* Espaciado horizontal entre los links */
+}
+
+#Accer a {
+    text-decoration: none;
+    color: rgb(185, 14, 14);
+    padding: 10px;
+    display: block;
+}
+
+
+
+.miembros-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.miembro-card {
+  background-color: #f0f0f0;
+  border-left: 6px solid #0000ff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.miembro-card:hover {
+  transform: translateY(-5px);
+  background-color: #e6e6ff;
+}
+
+.miembro-card span {
+  color: #555;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.titulo-miembros {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.miembros-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Esto centra las tarjetas también */
+}
+
+
+.tarjeta-imagen {
+  width: 280px;
+  background-color: #ffffff;
+  padding: 15px;
+  margin: 30px auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-left: 6px solid #0000ff;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-imagen:hover {
+  transform: scale(1.02);
+  background-color: #f5f7ff;
+}
+
+.tarjeta-imagen img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.nombre-imagen {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.Centrar-Texto{
+ text-align: center;
+ background-color: rgba(255, 0, 0, 0.749);
+
+}
+
+.Justificar-Texto{
+
+    text-align: justify;
+}
+
+
+
+/* Estilo general del nav */
+#Accer {
+  background-color: rgba(0, 13, 255, 0.906);
+  display: flex;
+  justify-content: center;
+}
+
+#Accer ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#Accer li {
+  position: relative;
+  margin: 0 15px;
+}
+
+#Accer a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  display: block;
+}
+
+
+
+#Accer li {
+  position: relative;  /* Para posicionar el submenu absoluto respecto al li */
+  margin: 0 15px;
+}
+
+/* Estilos para el submenu (ul dentro de ul) */
+#Accer ul ul {
+  display: none;          /* Oculto por defecto */
+  position: absolute;     /* Posicionamiento absoluto */
+  top: 100%;              /* Justo debajo del elemento padre */
+  left: 0;                /* Alineado a la izquierda */
+  background-color: rgba(0, 13, 255, 0.9);  /* Similar al menú padre */
+  padding: 10px 0;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 128, 0.3);
+  min-width: 160px;       /* Ancho mínimo del submenu */
+  z-index: 10;
+  flex-direction: column; /* Que los items estén en columna */
+}
+
+/* Mostrar submenu al hacer hover en el li padre */
+#Accer li:hover > ul {
+  display: flex;          /* Flex para que se acomoden verticalmente */
+}
+
+/* Estilos para los links dentro del submenu */
+#Accer ul ul li {
+  margin: 0;
+  width: 100%;
+}
+
+#Accer ul ul a {
+  padding: 10px 20px;
+  color: white;
+  background: transparent;
+  font-size: 16px;
+}
+
+#Accer ul ul a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffff66;
+  border-radius: 6px;
+}
+

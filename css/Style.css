@@ -1,0 +1,80 @@
+/* Estilo general del nav */
+#Accer {
+  background-color: rgba(0, 13, 255, 0.906);
+  display: flex;
+  justify-content: center;
+}
+
+#Accer ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#Accer li {
+  position: relative;
+  margin: 0 15px;
+}
+
+#Accer a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  display: block;
+}
+
+/* Estilo del submenú */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Posiciona el submenú justo debajo del elemento padre */
+  left: 0;
+  background-color: black;
+  min-width: 180px;
+  z-index: 999;
+}
+
+#Accer li {
+  position: relative;  /* Para posicionar el submenu absoluto respecto al li */
+  margin: 0 15px;
+}
+
+/* Estilos para el submenu (ul dentro de ul) */
+#Accer ul ul {
+  display: none;          /* Oculto por defecto */
+  position: absolute;     /* Posicionamiento absoluto */
+  top: 100%;              /* Justo debajo del elemento padre */
+  left: 0;                /* Alineado a la izquierda */
+  background-color: rgba(0, 13, 255, 0.9);  /* Similar al menú padre */
+  padding: 10px 0;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 128, 0.3);
+  min-width: 160px;       /* Ancho mínimo del submenu */
+  z-index: 10;
+  flex-direction: column; /* Que los items estén en columna */
+}
+
+/* Mostrar submenu al hacer hover en el li padre */
+#Accer li:hover > ul {
+  display: flex;          /* Flex para que se acomoden verticalmente */
+}
+
+/* Estilos para los links dentro del submenu */
+#Accer ul ul li {
+  margin: 0;
+  width: 100%;
+}
+
+#Accer ul ul a {
+  padding: 10px 20px;
+  color: white;
+  background: transparent;
+  font-size: 16px;
+}
+
+#Accer ul ul a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffff66;
+  border-radius: 6px;
+}
